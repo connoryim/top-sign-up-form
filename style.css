@@ -5,7 +5,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./font/Norse-Bold.otf);
+}
 html{
     padding: 0;
     background-color: rgb(247, 245, 245);
@@ -30,10 +33,14 @@ body{
 }
 
 #pageText{
+    display: flex;
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20vh;
-    font-size: 4rem;
-    text-align: center;
+    font-size: 8rem;
+    padding: var(--item-margin);
+    font-family: Norse-Bold;
+    justify-content: center;
+    align-items: center;
 }
 
 section > section{
@@ -105,4 +112,9 @@ input:focus{
     border: 1px solid blue;
     outline: none;
     box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+#odinLines{
+    height: 15vh;
+    margin: 0 1vw;
 }
