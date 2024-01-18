@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="backImg">
+        <h1 id="title">The Odin Project</h1>
+    </div>
+    <form id="signUp">
+        <h1>A fake site made for the odin project</h1>
+        <section id="info">
+            <h1>Let's get started!</h1>
+            <section id="fullName">
+                <p>
+                    <label for="first">
+                    <span>First Name</span>
+                </label>
+                <input type="text" id="first" name="first name" required>
+                </p>
+                <p>
+                    <label for="last">
+                        <span>Last Name</span>
+                    </label>
+                    <input type="text" id="last" name="last name" required>
+                </p>
+            </section>
+            <section id="contact">
+                <p>
+                    <label for="Email">
+                        <span>Email</span>
+                    </label>
+                    <input type="text" id="Email" name="email">
+                </p>
+                <p>
+                    <label for="Phone">
+                        <span>Phone Number</span>
+                    </label>
+                    <input type="text" id="Phone" name="phone number">
+                </p>
+            </section>
+            <section id="password">
+                <p>
+                    <label for="pasInpt">
+                        <span>Password</span>
+                    </label>
+                    <input type="text" id="pasInpt" name="Password">
+                </p>
+                <p>
+                    <label for="confirm">
+                        <span>Confirm Password</span>
+                    </label>
+                    <input type="text" id="confirm" name="Confirm Password">
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <button type="submit">Create Account</button>
+        </section>
+        <section>
+            <p>
+                Already have an account? <a href="loginpage">Log in!</a>
+            </p>
+        </section>
+    </form>
 </body>
 </html>
