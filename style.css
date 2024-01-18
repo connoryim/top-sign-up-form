@@ -1,3 +1,8 @@
+:root{
+    --item-margin:3rem;
+}
+
+
 html{
     padding: 0;
     background-color: rgb(247, 245, 245);
@@ -14,7 +19,7 @@ body{
     background-image: url(./images/leafImage.jpg);
     background-repeat: no-repeat;
     background-size: auto 100%;
-    width: 30%;
+    width: 45%;
     margin: 0;
     left: 0;
     top: 0;
@@ -30,12 +35,13 @@ body{
 
 section > section{
     display: flex;
+    margin: var(--item-margin);
 }
 
 p{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0 var(--item-margin) 0;
 }
 
 #signUp{
@@ -46,4 +52,21 @@ p{
     background-color: white;
     box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
     width: 100%;
+}
+
+section{
+    padding: 4px;
+}
+
+h1{
+    margin: var(--item-margin);
+}
+
+button{
+    margin: var(--item-margin);
+    background-color: rgb(10, 92, 10);
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
 }
