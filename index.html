@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign up page</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="pasInpt">Horse</div>
     <div id="pageTitle">
         <div id="pageText">The Odin Project</div>
     </div>
@@ -34,36 +36,36 @@
             </section>
             <section id="contact">
                 <p>
-                    <label for="Email">
+                    <label for="mail">  
                         <span>Email</span>
                     </label>
-                    <input type="text" id="Email" name="email" required>
+                    <input type="email" id="mail" name="usermail" required>
                 </p>
                 <p>
                     <label for="Phone">
                         <span>Phone Number</span>
                     </label>
-                    <input type="text" id="Phone" name="phone number" re>
+                    <input type="tel" id="Phone" name="phone" minlength="9">
                 </p>
             </section>
-            <section id="password">
+            <section id="pass">
                 <p>
-                    <label for="pasInpt">
+                    <label for="pwd">
                         <span>Password</span>
                     </label>
-                    <input type="text" id="pasInpt" name="Password" class="error">
+                    <input type="password" id="pwd" name="Password">
                 </p>
                 <p>
                     <label for="confirm">
                         <span>Confirm Password</span>
                     </label>
-                    <input type="text" id="confirm" name="Confirm Password" class="error" required>
+                    <input type="password" id="confirm" name="Confirm Password">
                 </p>
             </section>
         </section>
 
         <section>
-            <button type="submit">Create Account</button>
+            <button type="submit" id="subButton">Create Account</button>
         </section>
         <section>
             <p>
